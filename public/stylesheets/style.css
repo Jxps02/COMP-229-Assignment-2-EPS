@@ -1,0 +1,90 @@
+/* Japheth Alpas | StuID: 300798421 | 06/15/2023 */
+/* customer css goes here*/
+
+body {
+    background-color: #888562;
+}
+
+.custom-navbar {
+    background-color: #87CEEB;
+}
+
+.logo {
+    height: 70px;
+}
+
+.picture {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.services_img {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.services_img:hover {
+    transform: scale(1.05);
+}
+
+.project_image {
+    width: 400px;  
+    height: 300px; 
+}
+
+.highlight {
+    background-color: #FAFAD2;
+    padding: 10px;
+    width: auto;
+}
+
+.homepage {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    border-radius: 25px;
+} 
+
+.aboutpage {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.projectspage {
+    width: 100%;
+    height: 800px; 
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.servicespage {
+    width: 72%;
+    height: 450px; 
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.contactpage {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+}

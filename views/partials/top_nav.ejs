@@ -1,34 +1,58 @@
- <!-- Top Navigation Bar -->
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">IBM</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/home"> <i class="fa-solid fa-house-fire fa-lg"></i> Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/about"> <i class="fa-sharp fa-light fa-file-circle-info fa-lg"></i> About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/project">Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/service">Service</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/product">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/employees">Employees</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<!-- Japheth Alpas | StuID: 300798421 | 06/15/2023-->
+<body>
+    <!--Main Navigation Jumbotron-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">
+            <img class="logo" src="/stylesheets/images/Logo1.png" alt="Logo">
+        </a>
+        <!--This changed the hamburger or the small icon that appears when you make the window smaller to view the navbar-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <% if (title == "Home") { %>
+                <li class="nav-item active">
+                <% } else { %>
+                <li class="nav-item ">
+                <% } %>
+                <a class="nav-link" href="/home"><i class="fa-solid fa-lg fa-house-laptop"></i> Home </a>
+                </li>
+    
+                <% if (title == "About") { %>
+                <li class="nav-item active">
+                <% } else { %>
+                <li class="nav-item ">
+                <% } %>
+                <a class="nav-link" href="/about"><i class="fa-sharp fa-solid fa-circle-info"></i> About </a>
+                </li>
+    
+                <% if (title == "Projects") { %>
+                <li class="nav-item active">
+                <% } else { %>
+                <li class="nav-item ">
+                <% } %>
+                <a class="nav-link" href="/projects"><i class="fa-brands fa-elementor"></i> Projects </a>
+                </li>
+    
+                <% if (title == "Services") { %>
+                <li class="nav-item active">
+                <% } else { %>
+                <li class="nav-item ">
+                <% } %>
+                <a class="nav-link" href="/services"><i class="fa-solid fa-gears"></i> Services </a>
+                </li>
+    
+                <% if (title == "Contact") { %>
+                <li class="nav-item active">
+                <% } else { %>
+                <li class="nav-item ">
+                <% } %>
+                <a class="nav-link" href="/contact"><i class="fa-solid fa-phone"></i> Contact </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </body>
+    

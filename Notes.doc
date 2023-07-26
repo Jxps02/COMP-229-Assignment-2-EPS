@@ -1,0 +1,34 @@
+Assignment: 2
+ - Home Page
+ - About Me Page
+ - Projects Page
+	Functionality 1:
+	- add button
+	- Click on add button
+	- Open Form (Insert Project Details)
+		- Project Title (text box)
+		- Project Description (Text area)
+			- Apply for loan - done
+			- Display User information
+		- Project Deadline (Date)
+		- Submit button
+	- Click on submit
+	- Save Info in MongoDB
+	
+	Functionality 2: Display Project information
+	- Display it in grid view (Table)
+	- Project Title, description, deadline
+	- Update button
+
+	Functionality 3:
+	- Open Form with current project information
+	- User can update content
+	- User clicks on submit button
+	- Update info in MongoDB
+	- Redirect to home page
+
+ - Service Page
+
+ - Contact Page
+	Functionality 4:
+		- Save contact information in MongoDB

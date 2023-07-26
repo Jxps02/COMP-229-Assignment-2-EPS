@@ -1,0 +1,129 @@
+<!-- Japheth Alpas | StuID: 300798421 | 06/15/2023-->
+<% if (title === 'Home') { %>
+    <section class="homepage">
+      <div class="container text-center">
+        <h2>Welcome to my Portfolio!</h2>
+        <h4>Driven by a Passion for Growth and Creativity</h4>
+        <p>
+            Welcome to the exciting world of JRA, a student coder fueled by boundless passion and creativity. 
+            With a strong focus on web development, JRA creates captivating projects that seamlessly blend 
+            simplicity and impact, aiming to inspire and mesmerize along the way.
+        </p>
+        <a href="/about" class="btn btn-primary">Discover More About Me</a>
+      </div>
+    </section>
+    <% } %>
+    
+  
+<% if (title === 'About') { %>
+    <section class="aboutpage">
+    <div class="container text-center">
+        <h3 class="highlight">Who Am I?</h3>
+        <img class="picture" src="/stylesheets/images/Picture.png" alt="Japheth Alpas">
+        <h4>Japheth Alpas</h4>
+        <p>
+        My name is Japheth Alpas, and I am currently pursuing a Software Engineering Technology program at Centennial College. 
+        I have a background rooted in Filipino culture and migrated to Canada when I was 10. Inspired by my experiences and 
+        driven by a passion for technology, I am eager to learn more about coding and its limitless possibilities. 
+        I am excited to explore different programming languages and frameworks, and I am dedicated to honing my skills in software development. 
+        With a curious mindset and a determination to make a difference, I am on a continuous journey of growth and discovery in the fascinating world of coding.
+        </p>
+        <a href='/Assets/Japheth Alpas Resume.pdf' class="btn btn-primary" target="_blank">View PDF Resume</a>
+    </div>
+    </section>
+    <% } %>
+  
+<% if (title === 'Projects') { %>
+    <section class="projectspage">
+        <div class="container text-center">
+            <h3 class="highlight">Take a Look at What I've Done</h3>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="project_image" src="/stylesheets/images/mathtable.png" alt="Project 1">
+                    <h3>Multiplication Table</h3>
+                    <p>The Dynamic Multiplication Table Generator is a JavaScript-based project that enables users to generate customizable multiplication tables of various sizes. 
+                        With this project, users can input their preferred dimensions, such as 8x8, 9x6, or 10x5, and generate dynamic multiplication tables accordingly.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="project_image" src="/stylesheets/images/slideshow.png" alt="Project 2">
+                    <h3>Interactive Slideshow</h3>
+                    <p>The Interactive Slideshow with Fullscreen Mode and Play/Pause Functionality project is a web application that offers users an immersive and 
+                        customizable slideshow experience. 
+                        This project allows users to select a number of pictures from a collection, mark them as favorites, and enjoy various interactive features.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="project_image" src="/stylesheets/images/bugsmasher.png" alt="Project 3">
+                    <h3>Bug Smasher</h3>
+                    <p>The BugSmasher Game is an interactive web-based game that challenges users to click or "smash" a bug that continuously respawns on the screen. 
+                        The objective of the game is to earn points by successfully smashing the bug within a given time frame. 
+                        As the user earns more points, the bug's speed increases, making it more challenging to hit.</p>
+                </div>            
+            </div>
+        </div>
+    </section>
+    <% } %>
+
+
+    <% if (title === 'Services') { %>
+        <section class="servicespage">
+            <div class="container">
+                <h3 class="highlight">My Services</h3>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="services_img" src="/stylesheets/images/generalprogramming.png" alt="General Programming" >
+                        <p>General Programming</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="services_img" src="/stylesheets/images/webdevelopment.png" alt="Web Development Programming" >
+                        <p>Web Development</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="services_img" src="/stylesheets/images/mobileapp.png" alt="Mobile App Programming" >
+                        <p>Mobile Apps</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <% } %>
+
+    
+<% if (title === 'Contact') { %>
+    <section class="contactpage">
+        <div class="container">
+            <h3 class="highlight">Contact Me</h3>
+            <p>Contact information:</p>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p><strong>Name:</strong> Japheth Alpas</p>
+                    <p><strong>Email:</strong> jalpas@my.centennialcollege.ca</p>
+                    <p><strong>Phone:</strong> 416-xxx-xxxx</p>
+                    <p><strong>Address:</strong> 941 Progress Ave, Scarborough, ON M1G 3T8 </p>
+                </div>
+            </div>
+            <form id="contact-form" action="/" method="post">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailAddress">Email Address</label>
+                    <input type="email" id="emailAddress" name="emailAddress" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <a href="/home" class="btn btn-primary">Send</a> 
+                <!-- <button type="submit" class="btn btn-primary">Send</button> -->
+            </form>
+        </div>
+    </section>
+    <% } %>

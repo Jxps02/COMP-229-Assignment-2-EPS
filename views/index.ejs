@@ -2,10 +2,14 @@
 
 <%- include partials/top_nav.ejs %>
  
-<main class="container">
-  <h1><%= title %></h1>
-  <p>Welcome to <%= title %></p>
-</main>
+<main class="container text-center">
+    <div class="jumbotron">
+      <h1 class="display-4"><%= title %> </h1>
+    </div>
+  </main>
+  
+
+<%- include partials/content.ejs %>
 
 <%- include partials/bottom_nav.ejs %>  
 
